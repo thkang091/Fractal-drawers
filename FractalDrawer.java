@@ -22,15 +22,15 @@ public class FractalDrawer {
     public double drawFractal(String type) {
         Canvas canvas = new Canvas(750,750); // create a canvas for drawing
         Color color = new Color(0,0,0); // set color for shape
-        if (type.equals( "rectangle")){ //draw a rectangle if user inputs rectangle
+        if ("rectangle".equals (type)){ //draw a rectangle if user inputs rectangle
             drawRectangleFractal(250, 300,200,150, color, canvas,1);  //calls drawRectangleFractal to draw Rectangle from x coordinate of the circle's center of 250, y coordinate of the circle's center of 300, width of 200, height of 150 with set color and canvas from level 1
 
         }
-        else if (type.equals("triangle")){ //draw a triangle if user inputs triangle
+        else if ("triangle".equals(type)){ //draw a triangle if user inputs triangle
             drawTriangleFractal(250, 400,150,150, color, canvas,1); //calls drawTriangleFractal to draw Triangle from x position of 250, y position of 400, width of 150, height of 150 with set color and canvas from level 1
 
         }
-        else if (type.equals("circle")){ //draw a circle if user inputs circle
+        else if ("circle".equals(type)){ //draw a circle if user inputs circle
             drawCircleFractal(100, 350,350, color, canvas,1);  // calls drawCircleFractal to draw Circle from raidus of 100, x positon of 350, y position of 350 with set color and canvas from level 1
 
 
