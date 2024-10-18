@@ -6,6 +6,7 @@
 // FractalDrawer class draws a fractal of a shape indicated by user input
 
 import java.awt.Color;
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -51,7 +52,7 @@ public class FractalDrawer {
     }
         else {
             Triangle triangle  = new Triangle(x, y, width, height); //Create a new triangle with parameters of x,y,width,height
-            Random randomNumber = new Random(); // create random color with variable 'colorandom' and generate using with random class for the triangle.
+            Random randomNumber = new SecureRandom(); // create random color with variable 'colorandom' and generate using with random class for the triangle.
             int color1 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color2 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color3 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
@@ -77,7 +78,7 @@ public class FractalDrawer {
         }    
         else {
             Circle circle = new Circle(x, y, radius); //Create a new circle with parameters of x,y,radius
-            Random randomNumber = new Random(); // create random color with variable 'colorandom' and generate using with random class for the circle
+            Random randomNumber = new SecureRandom(); // create random color with variable 'colorandom' and generate using with random class for the circle
             int color1 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color2 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color3 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
@@ -103,7 +104,7 @@ public class FractalDrawer {
             totalArea += rectangle.calculateArea(); //the area is calculated and added to the 'totalArea' variable
         } else {
             Rectangle rectangle = new Rectangle(x, y, width, height); //Create a new rectangle with parameters of x,y,width,height
-            Random randomNumber = new Random(); // create random color with variable 'colorandom' and generate using with random class for the rectangle
+            Random randomNumber = new SecureRandom(); // create random color with variable 'colorandom' and generate using with random class for the rectangle
             int color1 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color2 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
             int color3 = randomNumber.nextInt(0,255); //assigned random integer between 0 and 255
